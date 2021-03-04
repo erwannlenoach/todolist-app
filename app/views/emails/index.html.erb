@@ -1,0 +1,20 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-sm">
+            <button type="button" class="btn btn-primary btn-lg"><%= link_to "Recevoir un email", emails_path, class: "btn btn-primary", remote: true, method: :post%></button>
+            <h3>Liste des emails</h3>
+            <ul class="list-group list-group-flush" id="emails-list">
+                <% @emails.each do |email|  %>   
+                    <li class="list-group-item" ><%= email.object %></li>
+                <% end %>
+            </ul>
+        </div>
+        <div class="col-sm">
+        <br><br>
+        <h3>Email à afficher</h3>
+        <ul class="list-group list-group-flush">
+        </ul>
+    </div>
+    </div>
+</div>
