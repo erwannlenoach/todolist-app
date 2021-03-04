@@ -6,8 +6,9 @@
             <h3>Liste des emails</h3>
             <ul class="list-group list-group-flush" id="emails-list">
                 <% @emails.each do |email|  %>   
-                   <li><%= email.object %>
-                   <button type="button" class="btn btn-warning"><%= link_to "show", email, remote:true%></button>  </li>
+                   <li class="remove"><%= email.object %>
+                   <button type="button" class="btn btn-warning"><%= link_to "show", email, remote:true%></button>  
+                   </li>
                 <% end %>
             </ul>
         </div>

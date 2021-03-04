@@ -15,7 +15,7 @@ class EmailsController < ApplicationController
   end
 
   def show
-    # Méthode qui récupère le potin concerné et l'envoie à la view show (show.html.erb) pour affichage
+   
     @email = Email.find(params[:id])
       
       respond_to do |format|
@@ -44,7 +44,12 @@ class EmailsController < ApplicationController
   def destroy
     @email = Email.find(params[:id])
     @email.destroy
-    redirect_to root_path
+
+    respond_to do |format|
+      format.html { redirect_to root_path }
+      format.js { }
+    end
+   
   end
 
 
