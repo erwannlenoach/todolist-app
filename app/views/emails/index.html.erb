@@ -6,15 +6,15 @@
             <h3>Liste des emails</h3>
             <ul class="list-group list-group-flush" id="emails-list">
                 <% @emails.each do |email|  %>   
-                    <li class="list-group-item" ><%= email.object %></li>
+                    <button type="button" class="btn btn-warning"><%= link_to "show", email, remote:true%></button>  
                 <% end %>
             </ul>
         </div>
         <div class="col-sm">
         <br><br>
-        <h3>Email à afficher</h3>
-        <ul class="list-group list-group-flush">
-        </ul>
+        <h3 id="email-show">Email à afficher</h3>
+            <ul class="list-group list-group-flush">
+            </ul>
     </div>
     </div>
 </div>
