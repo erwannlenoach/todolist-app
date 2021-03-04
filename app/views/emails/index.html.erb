@@ -7,13 +7,12 @@
             <ul class="list-group list-group-flush" id="emails-list">
                 <% @emails.each do |email|  %>   
                    <a class="remove" href="<%= email_path(email.id)%>" data-remote="true"><%=email.object%></a>
-                   </li>
                 <% end %>
             </ul>
         </div>
         <div class="col-sm">
         <br><br>
-        <h3 id="email-show">Email sélectionné</h3>
+        <h3 id="email-show">Email à afficher</h3>
             <ul class="list-group list-group-flush">
             </ul>
     </div>
