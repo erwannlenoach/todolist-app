@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+After a tough journey, please enjoy my AJAX app (+ I am a fan of the football club so it's all good)
 
-Things you may want to cover:
+* Ruby version: 2.5.1
 
-* Ruby version
+* Rails version: 5.2.1
 
-* System dependencies
+* database postgresql 
 
-* Configuration
+* heroku app : https://ajaxthp.herokuapp.com/emails
 
-* Database creation
+* remember that you need to create an account & log-in on the heroku app to enjoy the full experience
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
