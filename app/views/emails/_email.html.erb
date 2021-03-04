@@ -1,2 +1,2 @@
-<li><%= email.object %>
-<button type="button" class="btn btn-warning"><%= link_to "show", email, remote:true%></button>  </li>
+
+<a class="remove" href="<%= email_path(email.id)%>" data-remote="true"><%=email.object%></a>

@@ -11,6 +11,8 @@ require 'faker'
 
 10.times do
   my_email = Email.new(object: Faker::TvShows::HowIMetYourMother.catch_phrase,
-                    body: Faker::TvShows::HowIMetYourMother.quote)
+                    body: Faker::TvShows::HowIMetYourMother.quote,
+                    read: false
+                    )
   my_email.save
 end
